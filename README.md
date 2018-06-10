@@ -4,7 +4,7 @@ This repo is to understand the working of cmake and make in a C++ project
 ---
 
 ## What is CMake?
-It is a build tool that basically takes in the name of the *source file(s)* and *various parameters* mentioned in a file called **CMakeLists.txt** and spits out a **make** file that in turn could be used to create the final executable binary.
+It is a build tool that basically takes in the name of the **source file(s)** and **various parameters** mentioned in a file called **CMakeLists.txt** and spits out a **make** file that in turn could be used to create the final executable binary.
 
 ### Initial file structure
 * CMakeLists.txt (only file required by cmake)
@@ -16,4 +16,17 @@ The usual trend is to create a build directory so as to hold the output of cmake
 2. cd build
 3. cmake ..
 4. make
+  
+> *This shall generate the binary executable in the build directory that can be run to verify that the make file indeed compiles the project*  
 
+**Note:** Clean the build directory and try the above commands  
+
+### Final file structure
+* CMakeLists.txt (only file required by cmake)
+* main.cpp (source file)
+* build/
+	* CMakeFiles/
+	* cmake_install.cmake
+	* CMakeCache.txt
+	* Makefile
+	* output
