@@ -1,0 +1,3 @@
+/home/humble_d/Projects/Sandbox/sample_cmake/build/CMakeFiles/rebuild_cache.dir
+/home/humble_d/Projects/Sandbox/sample_cmake/build/CMakeFiles/output.dir
+/home/humble_d/Projects/Sandbox/sample_cmake/build/CMakeFiles/edit_cache.dir
