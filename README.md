@@ -49,3 +49,31 @@ target_name_2:
 ```
 To execute a particular target:
 > make target_name
+
+A rather comlex example of make ( where one target can call the other )
+> target: dependency1 dependency 2  
+command_depending_on_the_dependencies
+```
+CC=g++
+
+CFLAG=-c -Wall
+
+all: hello
+
+hello: main.o function1.o function2.o
+	$(CC) main.o function1.o function2.o -o output
+
+main.o: main.cpp
+	$(CC) $(CFLAG) main.cpp
+
+function1.o: function1.cpp
+	$(CC) $(CFLAG) function1.cpp
+
+function2.o: function2.cpp
+	$(CC) $(CFLAG) function2.cpp
+
+clean:
+	rm -rf *.o output
+```
+
+**Note:** Only files that have been changed after last compilation will be recompiled.
