@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++14 -g  -rdynamic CMakeFiles/output.dir/main.cpp.o  -o output 
