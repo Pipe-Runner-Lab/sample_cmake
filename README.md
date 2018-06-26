@@ -77,3 +77,21 @@ clean:
 ```
 
 **Note:** Only files that have been changed after last compilation will be recompiled.
+
+## Manual compilation
+The g++ compiler can be manually invoked to compile the project and to generate the binary like so:
+```
+g++ ../src/game_engine.cpp ../src/game_interface.cpp ../src/main.cpp -I ../src -I ../include -I ../libs/Logger/include -I ../libs/Randomize/include -L ../libs/Logger -l logger -L ../libs/Randomize -l randomize
+```
+Here **-I** flag is used to tell the compiler which directories contain the header files.
+**-L** flag is used to tell the compiler which directories contain the static library files (.a). **-l** flag is used to specify the name of the complier, which internally is prepended or postpended by the compiler. Hence here the compiler is looking for *liblogger.a* or *loggerlib.a*.
+
+To convert the *.o* file(s) into *.a* file, we use the following command:
+```
+g++ -c .src/randomize_util.cpp -I ./include
+```
+
+Once this has been done, we use the **ar** tool to generate the archieve like so:
+```
+ar rsv librandomize.a a.o b.o c.o
+```
