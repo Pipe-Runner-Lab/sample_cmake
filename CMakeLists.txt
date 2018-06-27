@@ -1,15 +1,18 @@
-# minimum required version of the cmake tool
 cmake_minimum_required( VERSION 3.0 )
 
-# set addition cmake variable according to project need
-set( CMAKE_BUILD_TYPE debug )
-set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FALGS} -std=c++14" )
+project( sample_cmake )
 
-# adding compiler options
-add_compile_options(-Wall -Wextra)
+# flags
 
-# output - executable name followed by all the source files we wish to compile
-add_executable(
-	output
-	main.cpp
-)
+# include files
+include_directories( ./include ./src ./libs/Logger/include ./libs/Randomize/include )
+
+# target
+add_executable( binary ./src/main.cpp ./src/game_engine.cpp ./src/game_interface.cpp )
+
+# 3rd party libs
+add_subdirectory( ./libs/Logger )
+target_link_libraries( binary logger )
+
+add_subdirectory( ./libs/Randomize )
+target_link_libraries( binary randomize )
