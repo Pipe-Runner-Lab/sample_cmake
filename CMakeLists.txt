@@ -18,5 +18,5 @@ target_link_libraries( binary logger )
 # target_link_libraries( binary randomize )
 
 add_library(randomize STATIC IMPORTED)
-set_property(TARGET randomize PROPERTY IMPORTED_LOCATION ../libs/Randomize/librandomize.a)
+set_property(TARGET randomize PROPERTY IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/libs/Randomize/librandomize.a)
 target_link_libraries( binary randomize )
