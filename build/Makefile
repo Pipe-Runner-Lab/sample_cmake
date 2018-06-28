@@ -136,19 +136,6 @@ logger/fast:
 	$(MAKE) -f libs/Logger/CMakeFiles/logger.dir/build.make libs/Logger/CMakeFiles/logger.dir/build
 .PHONY : logger/fast
 
-#=============================================================================
-# Target rules for targets named randomize
-
-# Build rule for target.
-randomize: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 randomize
-.PHONY : randomize
-
-# fast build rule for target.
-randomize/fast:
-	$(MAKE) -f libs/Randomize/CMakeFiles/randomize.dir/build.make libs/Randomize/CMakeFiles/randomize.dir/build
-.PHONY : randomize/fast
-
 src/game_engine.o: src/game_engine.cpp.o
 
 .PHONY : src/game_engine.o
@@ -240,7 +227,6 @@ help:
 	@echo "... binary"
 	@echo "... edit_cache"
 	@echo "... logger"
-	@echo "... randomize"
 	@echo "... src/game_engine.o"
 	@echo "... src/game_engine.i"
 	@echo "... src/game_engine.s"

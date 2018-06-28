@@ -40,7 +40,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/humble_d/Projects/Sandbox/sample_cmake/build/libs/Logger/cmake_install.cmake")
-  include("/home/humble_d/Projects/Sandbox/sample_cmake/build/libs/Randomize/cmake_install.cmake")
 
 endif()
 

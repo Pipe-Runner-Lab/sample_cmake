@@ -14,5 +14,9 @@ add_executable( binary ./src/main.cpp ./src/game_engine.cpp ./src/game_interface
 add_subdirectory( ./libs/Logger )
 target_link_libraries( binary logger )
 
-add_subdirectory( ./libs/Randomize )
+# add_subdirectory( ./libs/Randomize )
+# target_link_libraries( binary randomize )
+
+add_library(randomize STATIC IMPORTED)
+set_property(TARGET randomize PROPERTY IMPORTED_LOCATION ../libs/Randomize/librandomize.a)
 target_link_libraries( binary randomize )

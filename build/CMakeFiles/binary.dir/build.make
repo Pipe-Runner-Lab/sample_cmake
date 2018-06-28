@@ -143,7 +143,7 @@ binary: CMakeFiles/binary.dir/src/game_engine.cpp.o
 binary: CMakeFiles/binary.dir/src/game_interface.cpp.o
 binary: CMakeFiles/binary.dir/build.make
 binary: libs/Logger/liblogger.a
-binary: libs/Randomize/librandomize.a
+binary: ../libs/Randomize/librandomize.a
 binary: CMakeFiles/binary.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/humble_d/Projects/Sandbox/sample_cmake/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable binary"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/binary.dir/link.txt --verbose=$(VERBOSE)

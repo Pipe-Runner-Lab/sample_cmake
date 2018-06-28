@@ -187,17 +187,8 @@ Logger_BINARY_DIR:STATIC=/home/humble_d/Projects/Sandbox/sample_cmake/build/libs
 //Value Computed by CMake
 Logger_SOURCE_DIR:STATIC=/home/humble_d/Projects/Sandbox/sample_cmake/libs/Logger
 
-//Value Computed by CMake
-Randomize_BINARY_DIR:STATIC=/home/humble_d/Projects/Sandbox/sample_cmake/build/libs/Randomize
-
-//Value Computed by CMake
-Randomize_SOURCE_DIR:STATIC=/home/humble_d/Projects/Sandbox/sample_cmake/libs/Randomize
-
 //Dependencies for target
 logger_LIB_DEPENDS:STATIC=
-
-//Dependencies for target
-randomize_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
 sample_cmake_BINARY_DIR:STATIC=/home/humble_d/Projects/Sandbox/sample_cmake/build
@@ -304,7 +295,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

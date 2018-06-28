@@ -4,6 +4,3 @@
 /home/humble_d/Projects/Sandbox/sample_cmake/build/libs/Logger/CMakeFiles/rebuild_cache.dir
 /home/humble_d/Projects/Sandbox/sample_cmake/build/libs/Logger/CMakeFiles/logger.dir
 /home/humble_d/Projects/Sandbox/sample_cmake/build/libs/Logger/CMakeFiles/edit_cache.dir
-/home/humble_d/Projects/Sandbox/sample_cmake/build/libs/Randomize/CMakeFiles/rebuild_cache.dir
-/home/humble_d/Projects/Sandbox/sample_cmake/build/libs/Randomize/CMakeFiles/randomize.dir
-/home/humble_d/Projects/Sandbox/sample_cmake/build/libs/Randomize/CMakeFiles/edit_cache.dir
