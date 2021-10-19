@@ -50,7 +50,7 @@ target_name_2:
 To execute a particular target:
 > make target_name
 
-A rather comlex example of make ( where one target can call the other )
+A rather complex example of make ( where one target can call the other )
 > target: dependency1 dependency 2  
 command_depending_on_the_dependencies
 ```
